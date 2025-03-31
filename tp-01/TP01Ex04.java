@@ -18,6 +18,6 @@ public class TP01Ex04 {
 		System.out.print("Digite a altura do triangulo: ");
 		double altura = ler.nextDouble();
 		
-		System.out.println("A area do quadrado: " + (base*altura)/2);
+		System.out.println("A area do triangulo: " + (base*altura)/2);
 	}
 }
