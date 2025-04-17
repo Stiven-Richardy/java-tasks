@@ -24,6 +24,5 @@ public class TP02Ex01 {
 		}
 		
 		System.out.println("Correto! " + n2 + " > " + n1);
-		
 	}
 }
