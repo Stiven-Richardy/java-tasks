@@ -6,11 +6,8 @@ INTEGRANTES:
 -> Guilherme Mendes de Sousa
 EXERCICIO 5: Armazenar seis valores em uma matriz de ordem 3x2. Apresentar os valores na tela.
 */
-import java.util.Scanner;
-
 public class TP02Ex05 {
 	public static void main (String [] args) {
-		Scanner ler = new Scanner(System.in);
 		double[][] matriz = new double[3][2];
 
 		for(int i = 0; i < matriz.length; i++) {
@@ -20,10 +17,11 @@ public class TP02Ex05 {
 		}
 		System.out.println("Os valores armazenados na matriz: ");
 		for(int i = 0; i < matriz.length; i++) {
+			System.out.print("| ");
 			for (int j = 0; j < matriz[i].length; j++) {
 				System.out.print("[" + matriz[i][j] + "] ");
 			}
-			System.out.println();
+			System.out.println("|");
 		}
 	}
 }

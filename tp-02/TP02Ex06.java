@@ -20,12 +20,11 @@ public class TP02Ex06 {
 			System.out.println("----------------------------------");
 			System.out.println("Linha: " + (ii+1));
 			for (int jj = 0; jj < col; jj++){
-				System.out.println("Informe o nome de [" + (ii+1) + ", " + (jj+1) + "]");
+				System.out.print("Informe o nome de [" + (ii+1) + ", " + (jj+1) + "]: ");
 				matriz[ii][jj] =  ler.nextLine();
 			}
 		}
 
-		// Exibição da matriz
 		for (int ii = 0; ii < lin; ii++){
 			System.out.print("|");
 			for (int jj = 0; jj < col; jj++){
@@ -33,7 +32,7 @@ public class TP02Ex06 {
 			}
 			System.out.println(" |");
 		}
-		
+		ler.close();
 	}
 
 }

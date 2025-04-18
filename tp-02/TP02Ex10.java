@@ -82,22 +82,27 @@ public class TP02Ex10 {
 		System.out.println("=========================================");
         System.out.println("Matriz original:");
         for (int i = 0; i < m; i++) {
+            System.out.print("| ");
             for (int j = 0; j < m; j++) {
                 System.out.printf("[%6.2f] ", matriz[i][j]);
             }
-            System.out.println();
+            System.out.println("|");
         }
 
         if (inversaExiste == true) {
+            System.out.println("=========================================");
             System.out.println("Matriz inversa:");
             for (int i = 0; i < m; i++) {
+                System.out.print("| ");
                 for (int j = 0; j < m; j++) {
                     System.out.printf("[%6.2f] ", matrizInversa[i][j]);
                 }
-                System.out.println();
+                System.out.println("|");
             }
         } else {
+            System.out.println("=========================================");
             System.out.println("A matriz não possui inversa (matriz singular).");
         }
+        ler.close();
     }
 }

@@ -48,18 +48,22 @@ public class TP02Ex09 {
 		System.out.println("=========================================");
 		System.out.println("Matriz original: ");
 		for (int i = 0; i < matriz.length; i++) {
+			System.out.print("| ");
 			for (int j = 0; j < matriz[i].length; j++) {
 				System.out.print("[" + matriz[i][j] + "] ");
 			}
-			System.out.println();
+			System.out.println("|");
 		}
 
+		System.out.println("=========================================");
 		System.out.println("Matriz transposta: ");
 		for (int i = 0; i < matrizTransposta.length; i++) {
+			System.out.print("| ");
 			for (int j = 0; j < matrizTransposta[i].length; j++) {
 				System.out.print("[" + matrizTransposta[i][j] + "] ");
 			}
-			System.out.println();
+			System.out.println("|");
 		}
+		ler.close();
 	}
 }

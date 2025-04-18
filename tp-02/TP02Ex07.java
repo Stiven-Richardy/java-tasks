@@ -16,9 +16,10 @@ public class TP02Ex07 {
 		double[][] matriz = new double[3][4];
 		double constMultiplicativa;
 
-		System.out.print("Digite os 12 valores para a matriz 3x4: ");
+		System.out.println("Digite os 12 valores para a matriz 3x4: ");
 		for(int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.print("[" + (i+1) + ", " + (j+1) + "]: ");
 				matriz[i][j] = ler.nextDouble();
 			}
 		}
@@ -26,13 +27,15 @@ public class TP02Ex07 {
 		System.out.print("Digite a constante multiplicativa: ");
 		constMultiplicativa = ler.nextDouble();
 
-		System.out.println("Os valores armazenados na matriz multiplicados pela constante: ");
+		System.out.println("Os valores na matriz multiplicados pela constante: ");
 		for(int i = 0; i < matriz.length; i++) {
+			System.out.print("|  ");
 			for (int j = 0; j < matriz[i].length; j++) {
 				matriz[i][j] *= constMultiplicativa;
 				System.out.print("[" + matriz[i][j] + "] ");
 			}
-			System.out.println();
+			System.out.println("|");
 		}
+		ler.close();
 	}
 }

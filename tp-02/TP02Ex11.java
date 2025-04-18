@@ -97,5 +97,6 @@ public class TP02Ex11 {
 					(matrizSarrus[0][2] * matrizSarrus[1][1] * matrizSarrus[2][0]));
 			System.out.println("Determinante: " + det);
 		}
+		ler.close();
 	}
 }

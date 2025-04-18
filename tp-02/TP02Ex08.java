@@ -25,12 +25,11 @@ public class TP02Ex08 {
 			System.out.println("----------------------------------");
 			System.out.println("Linha: " + (ii+1));
 			for (int jj = 0; jj < col; jj++){
-				System.out.println("Informe o valor de [" + (ii+1) + ", " + (jj+1) + "]");
+				System.out.print("Informe o valor de [" + (ii+1) + ", " + (jj+1) + "]: ");
 				matriz[ii][jj] =  ler.nextInt();
 			}
 		}
 
-		// Exibição da matriz primeira
 		System.out.println("----------------------------------");
 		System.out.println("Matriz original: ");
 		for (int ii = 0; ii < lin; ii++){
@@ -43,14 +42,12 @@ public class TP02Ex08 {
 
 		System.out.println("Informe o multiplicador da matriz");	
 		int mult = ler.nextInt();
-		// Multiplicando a matriz
 		for (int ii = 0; ii < lin; ii++){
 			for (int jj = 0; jj < col; jj++){
 				matrizMultiplicada[ii][jj] =  matriz[ii][jj] * mult;
 			}
 		}
 
-		// Exibição da matriz nova
 		System.out.println("----------------------------------");
 		System.out.println("Matriz multiplicada: ");
 		for (int ii = 0; ii < lin; ii++){
@@ -60,7 +57,7 @@ public class TP02Ex08 {
 			}
 			System.out.println(" |");
 		}
-		
+		ler.close();
 	}
 
 }

@@ -4,7 +4,7 @@ TURMA: ADS 371 - LINGUAGEM DE PROGRAMAÇÃO
 INTEGRANTES: 
  -> Stiven Richardy Silva Rodrigues
  -> Guilherme Mendes de Sousa
- EXERCICIO 2: Entrar via teclado com dez valores positivos. Consistir a digitação e enviar mensagem de
+EXERCICIO 2: Entrar via teclado com dez valores positivos. Consistir a digitação e enviar mensagem de
 erro, se necessário. Após a digitação, exibir:
 a. O maior valor;
 b. A soma dos valores;
@@ -21,9 +21,16 @@ public class TP02Ex02 {
 		
 		for (int ii = 0; ii < valores.length; ii++)
 		{
-		System.out.println("Informe o " + (ii+1) + "o número" );
-		valores[ii] = ler.nextInt();
+			while (valores[ii] <= 0) {
+				System.out.print("Informe o numero " + (ii+1) + ": ");
+				valores[ii] = ler.nextInt();
+
+				if (valores[ii] <= 0) {
+					System.out.println("Valor invalido, digite um numero positivo.");
+				}
+			}
 		}
+		
 		soma += valores[0];
 		for (int ii = 1; ii < valores.length; ii++)
 		{
@@ -32,9 +39,11 @@ public class TP02Ex02 {
 			}
 			soma += valores[ii];
 		}
-		System.out.println("O maior número é: " + valores[indMaior]);
+
+		System.out.println("O maior numero e: " + valores[indMaior]);
 		double media = soma/valores.length;
-		System.out.println("A soma é: " + soma);
-		System.out.println("A média é: " + media);		
+		System.out.println("A soma e: " + soma);
+		System.out.println("A media e: " + media);		
+		ler.close();
 	}
 }
