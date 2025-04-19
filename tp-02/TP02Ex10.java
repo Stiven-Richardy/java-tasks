@@ -101,7 +101,7 @@ public class TP02Ex10 {
             }
         } else {
             System.out.println("=========================================");
-            System.out.println("A matriz não possui inversa (matriz singular).");
+            System.out.println("Matriz incorreta (matriz singular).");
         }
         ler.close();
     }
