@@ -32,9 +32,10 @@ public class TP02Ex02 {
 		}
 		
 		soma += valores[0];
+
 		for (int ii = 1; ii < valores.length; ii++)
 		{
-			if(valores[ii] > valores[ii-1]) {
+			if(valores[ii] > valores[indMaior]) {
 				indMaior = ii;
 			}
 			soma += valores[ii];
